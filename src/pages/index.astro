@@ -1,13 +1,29 @@
 ---
 import SectionContainer from "../components/SectionContainer.astro";
+import Contacto from "../components/Contacto.astro";
 import Separator1 from "../components/Separator1.astro";
 import Layout from "../layouts/Layout.astro";
+import About from "../components/About.astro";
+import MainGrid from "../components/MainGrid.astro";
 ---
 
 <Layout title="Plantilla web" description="Plantilla web">
-    <div class="bg-white/90 py-6">
+    <div class="bg-white/90 py-20">
         <SectionContainer class="">
             <Separator1 />
         </SectionContainer>
+    </div>
+    <div class="bg-white/90 py-6">
+        <SectionContainer class="">
+            <About/>
+        </SectionContainer>
+    </div>
+    <div class="bg-white/90 py-6">
+        <SectionContainer class="">
+            <MainGrid />
+        </SectionContainer>
+    </div>
+    <div class="bg-white/90 py-6">
+        <Contacto />
     </div>
 </Layout>
