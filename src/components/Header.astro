@@ -1,0 +1,27 @@
+---
+import MenuIcon from "../icons/Menu.astro";
+import CloseIcon from "../icons/Close.astro";
+
+const { class: className } = Astro.props;
+---
+
+<header id="header-nav" class="sticky top-0 w-full px-6 py-2 z-50 bg-white " >
+    <div class="max-w-3xl mx-auto flex items-center gap-16 justify-between">
+        <div class="w-auto h-full">
+            <img src="/logo.png" alt="" class="max-h-14">
+        </div>
+        <nav
+            id="header-menu"
+            class="fixed w-auto h-dvh inset-0 bg-white/65 text-2xl backdrop-blur-sm flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-xl md:flex-row md:translate-y-[initial]"
+        >
+            <a href="#top">Top</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#header-nav" class="md:hidden absolute top-6 right-6">
+                <CloseIcon />
+            </a>
+        </nav>
+        <a href="#header-menu" class="md:hidden top-6 right-6"><MenuIcon /></a>
+    </div>
+</header>
