@@ -1,13 +1,19 @@
 ---
+interface Props {
+    id: string
+}
+
 import EggIcon from "../icons/Egg.astro"
 import ChefHatIcon from "../icons/ChefHat.astro"
 import KitchenToolsIcon from "../icons/KitchenTools.astro"
 import MapPinIcon from "../icons/MapPin.astro"
 import SaladIcon from "../icons/Salad.astro"
 import UserStarIcon from "../icons/UserStar.astro"
+
+const {id} = Astro.props
 ---
 
-<div class="grid grid-cols-6 auto-rows-[12rem] gap-6">
+<div id={id} class="grid grid-cols-6 auto-rows-[12rem] gap-6">
     <div class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center  text-center text-wrap justify-around">
         <EggIcon class="size-20 text-orange-500"/>
         <h1 class="font-bold text-lg" >Titulo</h1>
