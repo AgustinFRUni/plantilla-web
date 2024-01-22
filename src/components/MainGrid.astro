@@ -1,47 +1,66 @@
 ---
 interface Props {
-    id: string
+    id: string;
 }
 
-import EggIcon from "../icons/Egg.astro"
-import ChefHatIcon from "../icons/ChefHat.astro"
-import KitchenToolsIcon from "../icons/KitchenTools.astro"
-import MapPinIcon from "../icons/MapPin.astro"
-import SaladIcon from "../icons/Salad.astro"
-import UserStarIcon from "../icons/UserStar.astro"
+import EggIcon from "../icons/Egg.astro";
+import ChefHatIcon from "../icons/ChefHat.astro";
+import KitchenToolsIcon from "../icons/KitchenTools.astro";
+import MapPinIcon from "../icons/MapPin.astro";
+import SaladIcon from "../icons/Salad.astro";
+import UserStarIcon from "../icons/UserStar.astro";
 
-const {id} = Astro.props
+const { id } = Astro.props;
 ---
 
 <div id={id} class="grid grid-cols-6 auto-rows-[12rem] gap-6">
-    <div class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center  text-center text-wrap justify-around">
-        <EggIcon class="size-20 text-orange-500"/>
-        <h1 class="font-bold text-lg" >Titulo</h1>
-        <h2 class="font-semibold text-wrap max-w-[20ch]">Lorem ipsun asdfasdfasd aspdfhapsdufh asdfa asdf</h2>
+    <div
+        class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center text-center text-wrap justify-around"
+    >
+        <EggIcon class="size-20 text-orange-500" />
+        <h2 class="font-semibold text-wrap max-w-[20ch]">
+            Te ofrecemos los mejores POLLOS y por supuesto al mejor precio !
+        </h2>
     </div>
-    <div class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center  text-center text-wrap justify-around">
-        <ChefHatIcon class="size-20 text-orange-500"/>
-        <h1 class="font-bold text-lg" >Titulo</h1>
-        <h2 class="font-semibold max-w-[20ch]">Lorem ipsun asdfasdfasd aspdfhapsdufh asdfa asdf</h2>
+    <div
+        class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center text-center text-wrap justify-around"
+    >
+        <ChefHatIcon class="size-20 text-orange-500" />
+    <!--<h1 class="font-bold text-lg">Titulo</h1> -->    
+        <h2 class="font-semibold max-w-[20ch]">
+            Nuestros productos se preparan en el momento, super frescos !
+        </h2>
     </div>
-    <div class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center  text-center text-wrap justify-around">
-        <KitchenToolsIcon class="size-20 text-orange-500"/>
-        <h1 class="font-bold text-lg" >Titulo</h1>
-        <h2 class="font-semibold max-w-[20ch]">Lorem ipsun asdfasdfasd aspdfhapsdufh asdfa asdf</h2>
+    <div
+        class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center text-center text-wrap justify-around"
+    >
+        <KitchenToolsIcon class="size-20 text-orange-500" />
+<!--<h1 class="font-bold text-lg">Titulo</h1> -->            <h2 class="font-semibold max-w-[20ch]">
+            Todos nuestros productos son cuidadosamente seleccionados
+        </h2>
     </div>
-    <div class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center  text-center text-wrap justify-around">
-        <MapPinIcon class="size-20 text-orange-500"/>
-        <h1 class="font-bold text-lg" >Titulo</h1>
-        <h2 class="font-semibold max-w-[20ch]">Lorem ipsun asdfasdfasd aspdfhapsdufh asdfa asdf</h2>
+    <div
+        class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center text-center text-wrap justify-around"
+    >
+        <MapPinIcon class="size-20 text-orange-500" />
+<!--<h1 class="font-bold text-lg">Titulo</h1> -->            <h2 class="font-semibold max-w-[20ch]">
+            Todos nuestros productos son de elaboración propia
+        </h2>
     </div>
-    <div class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center  text-center text-wrap justify-around">
-        <SaladIcon class="size-20 text-orange-500"/>
-        <h1 class="font-bold text-lg" >Titulo</h1>
-        <h2 class="font-semibold max-w-[20ch]">Lorem ipsun asdfasdfasd aspdfhapsdufh asdfa asdf</h2>
+    <div
+        class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center text-center text-wrap justify-around"
+    >
+        <SaladIcon class="size-20 text-orange-500" />
+<!--<h1 class="font-bold text-lg">Titulo</h1> -->            <h2 class="font-semibold max-w-[20ch]">
+           También podés encontrar una gran variedad de fiambre y quesos...
+        </h2>
     </div>
-    <div class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center  text-center text-wrap justify-around">
-        <UserStarIcon class="size-20 text-orange-500"/>
-        <h1 class="font-bold text-lg" >Titulo</h1>
-        <h2 class="font-semibold max-w-[20ch]">Lorem ipsun asdfasdfasd aspdfhapsdufh asdfa asdf</h2>
+    <div
+        class="col-span-3 md:col-span-2 bg-white border-t border-b border-black flex-col content-center flex items-center text-center text-wrap justify-around"
+    >
+        <UserStarIcon class="size-20 text-orange-500" />
+<!--<h1 class="font-bold text-lg">Titulo</h1> -->            <h2 class="font-semibold max-w-[20ch]">
+            Como quieras comerlas, fritas o al horno!
+        </h2>
     </div>
 </div>
